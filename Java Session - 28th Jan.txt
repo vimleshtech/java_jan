@@ -1,0 +1,52 @@
+==========================
+Polymorphisam: Multiple funciton have same name but different works
+==========================
+Poly		: Many  
+Morphisam	: Forms 
+
+
+There are following types of polymorphisam:
+	1. Overloading : compile time /static binding / early binding
+	2. Overriding   : run time / dynamic binding / late binding
+
+	Overloading : multiple function have same name but different argument(types of 			argument, no of argument)		
+		-Overloading doesn't depends on return type 
+		Example:
+		  class Compute{
+			void  add(int a, int b){}
+			void add(double a, double x){}
+			
+			--incorrect (not overloading)
+			int add(int a, int c){}
+		}		
+
+		class Calc extends Compute{
+			void add (int a, double b, int c){}
+		}
+
+	Overriding: multiple function have same name and same argument 
+		Example:
+		 class Compute{
+
+			void welcome(){
+				//print hello -1
+
+			}
+
+
+
+		}
+
+		class Calc extends Compute{
+
+			void welcome()
+			{
+				//print hello -2
+
+			}
+
+		}			
+				
+
+						
+			
