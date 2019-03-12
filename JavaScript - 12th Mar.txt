@@ -1,0 +1,189 @@
+Java Script(JS) 
+=============
+->JS is client side scripting language which works on browser 
+->JS can be embadded with any web application plateform (ASP.Net, J2EE, PHP, Angular et.c)
+
+Data Type
+=============
+number	
+		a =11
+		a =333.44
+string
+		a ='skhshs'
+		a ="ssghs"
+boolean
+		a = true or false
+object
+		a = [11,222,333,44,'jsghsf']
+		a ={id:100,name:'nitin',gender:'male'}
+
+function 
+		function test()
+		{
+
+		}
+
+
+typeof()		: return data type
+
+
+
+Object / Array Operation
+===========================
+a = [111,222,344]
+length		: return count of element 
+	a.length
+index		: return element by given index
+	a[1]
+push		: add new value after last index
+	a.push()
+pop		: remove from last
+	a.pop()
+splice		: remove from given index
+	a.splice(index,count)
+sort		: arrange data in ascending or descending order
+	a.sort()  --ascending
+	a.sort().reverse() --descending
+
+filter		: filter value by given condition 
+
+
+customer = [{id:10,name:'raman',gender:'male'},{id:101,name:'aman',gender:'male'},
+		{id:20,name:'monika',gender:'female'},{id:40,name:'ridhi',gender:'female'}]
+
+
+
+
+sorting :
+	customer.sort((x,y) => x.name.localeCompare(y.name))  --asc
+	customer.sort((x,y) => y.name.localeCompare(x.name))  --desc
+
+
+filter:
+	customer.filter(x=> x.gender =='male')	
+
+
+
+
+
+
+
+============
+a =11
+11
+typeof(a)
+"number"
+a =11.333
+11.333
+typeof(a)
+"number"
+a="skhsjhsf hsfg"
+"skhsjhsf hsfg"
+typeof(a)
+"string"
+a='skhss f22'
+"skhss f22"
+typeof(a)
+"string"
+a = true 
+true
+typeof(a)
+"boolean"
+a = [111,222,33]
+(3) [111, 222, 33]
+typeof(a)
+"object"
+a = {id:111,name:'raman'}
+{id: 111, name: "raman"}
+typeof(a)
+"object"
+a.id
+111
+a.name 
+"raman"
+a = [111,222,333,44,2111,1]
+(6) [111, 222, 333, 44, 2111, 1]
+a.length
+6
+a[1]
+222
+a[0]
+111
+a[3]
+44
+a.push(100)
+7
+a
+(7) [111, 222, 333, 44, 2111, 1, 100]
+a.push(1)
+8
+a
+(8) [111, 222, 333, 44, 2111, 1, 100, 1]
+a.pop()
+1
+a.pop()
+100
+a.pop()
+1
+a.pop()
+2111
+a.pop()
+44
+a.pop()
+333
+a.pop()
+222
+a
+[111]
+a
+[111]
+a.pop()
+111
+a
+[]
+a = [111,222,333,44,2111,1]
+(6) [111, 222, 333, 44, 2111, 1]
+a
+(6) [111, 222, 333, 44, 2111, 1]
+a.splice(2)
+(4) [333, 44, 2111, 1]
+a
+(2) [111, 222]
+a = [111,222,333,44,2111,1]
+(6) [111, 222, 333, 44, 2111, 1]0: 1111: 2222: 3333: 444: 21115: 1length: 6__proto__: Array(0)
+a.splice(2,1)
+[333]
+a = [111,222,333,44,2111,1]
+(6) [111, 222, 333, 44, 2111, 1]
+a.splice(2,2)
+(2) [333, 44]
+a
+(4) [111, 222, 2111, 1]
+a.sort()
+(4) [1, 111, 2111, 222]
+a.sort().reverse()
+(4) [222, 2111, 111, 1]
+
+customer = [{id:10,name:'raman',gender:'male'},{id:101,name:'aman',gender:'male'},
+		{id:20,name:'monika',gender:'female'},{id:40,name:'ridhi',gender:'female'}]
+(4) [{…}, {…}, {…}, {…}]
+customer
+(4) [{…}, {…}, {…}, {…}]0: {id: 10, name: "raman", gender: "male"}1: {id: 101, name: "aman", gender: "male"}2: {id: 20, name: "monika", gender: "female"}3: {id: 40, name: "ridhi", gender: "female"}length: 4__proto__: Array(0)
+customer[1]
+{id: 101, name: "aman", gender: "male"}
+customer[3]
+{id: 40, name: "ridhi", gender: "female"}
+customer[3].name
+"ridhi"
+customer[3].id
+40
+customer[3].gender
+"female"
+	customer.sort((x,y) => x.name.localeCompare(y.name))
+(4) [{…}, {…}, {…}, {…}]0: {id: 101, name: "aman", gender: "male"}1: {id: 20, name: "monika", gender: "female"}2: {id: 10, name: "raman", gender: "male"}3: {id: 40, name: "ridhi", gender: "female"}length: 4__proto__: Array(0)
+	customer.sort((x,y) => y.name.localeCompare(x.name))
+(4) [{…}, {…}, {…}, {…}]0: {id: 40, name: "ridhi", gender: "female"}1: {id: 10, name: "raman", gender: "male"}2: {id: 20, name: "monika", gender: "female"}3: {id: 101, name: "aman", gender: "male"}length: 4__proto__: Array(0)
+customer.filter(x=> x.gender =='male')	
+(2) [{…}, {…}]0: {id: 10, name: "raman", gender: "male"}1: {id: 101, name: "aman", gender: "male"}length: 2__proto__: Array(0)
+customer.filter(x=> x.id>10)	
+(3) [{…}, {…}, {…}]0: {id: 40, name: "ridhi", gender: "female"}1: {id: 20, name: "monika", gender: "female"}2: {id: 101, name: "aman", gender: "male"}length: 3__proto__: Array(0)
